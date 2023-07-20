@@ -12,6 +12,7 @@ html {
 body {
     margin: 0;
 }
+
 section {
     margin-bottom: 60px;
 }
@@ -41,7 +42,9 @@ section {
     position: absolute;
 }
 
-.bg, .bg2, .bg3 {
+.bg,
+.bg2,
+.bg3 {
     height: 560px;
 }
 
@@ -49,8 +52,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Set the container_card position to relative */
-    z-index: 1; /* Bring the container_card above the background elements */
+    position: relative;
+    /* Set the container_card position to relative */
+    z-index: 1;
+    /* Bring the container_card above the background elements */
 }
 
 /* Rest of the CSS remains the same */
@@ -194,21 +199,21 @@ body.dark-mode {
     justify-content: center;
     /* Center items vertically */
     align-items: center;
-  }
-  
-  .cards .red {
+}
+
+.cards .red {
     background-color: #f43f5e;
-  }
-  
-  .cards .blue {
+}
+
+.cards .blue {
     background-color: #3b82f6;
-  }
-  
-  .cards .green {
+}
+
+.cards .green {
     background-color: #22c55e;
-  }
-  
-  .cards .card {
+}
+
+.cards .card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,26 +225,26 @@ body.dark-mode {
     color: white;
     cursor: pointer;
     transition: 400ms;
-  }
-  
-  .cards .card p.tip {
+}
+
+.cards .card p.tip {
     font-size: 1em;
     font-weight: 700;
-  }
-  
-  .cards .card p.second-text {
+}
+
+.cards .card p.second-text {
     font-size: .7em;
-  }
-  
-  .cards .card:hover {
+}
+
+.cards .card:hover {
     transform: scale(1.1, 1.1);
-  }
-  
-  .cards:hover > .card:not(:hover) {
+}
+
+.cards:hover>.card:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9, 0.9);
-  }
-  
+}
+
 a {
     color: #000000;
     text-decoration: none;
