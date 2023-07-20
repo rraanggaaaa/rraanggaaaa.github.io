@@ -1,6 +1,18 @@
-footer {
-    clear: both;
+/* Your existing CSS styles */
+
+.footer {
+    /* Your existing styles */
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    align-items: center; /* Align the elements horizontally at the center */
 }
+
+/* Additional styles to position the <p> element */
+.footer p {
+    margin-top: 20px;
+    color: #000000; /* Add some spacing between the container and the <p> element */
+}
+
 /* Ganti warna tombol untuk setiap mode */
 #theme-toggle-button {
     fill: #000000; /* Warna tombol untuk mode terang */
