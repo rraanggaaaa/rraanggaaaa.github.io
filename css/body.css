@@ -1,0 +1,251 @@
+body {
+    background-color: #ffffff;
+    /* Mode Terang */
+    transition: background-color 0.5s ease;
+    color: #000000;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #000 50%, #df8484 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    width: 122%;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+    position: absolute;
+}
+
+.bg3 {
+    animation-duration: 5s;
+    position: absolute;
+}
+
+.bg,
+.bg2,
+.bg3 {
+    height: 560px;
+}
+
+.container_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Set the container_card position to relative */
+    z-index: 1;
+    /* Bring the container_card above the background elements */
+}
+
+/* Rest of the CSS remains the same */
+
+.content {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    /* Mode Gelap */
+    color: #ffffff;
+}
+
+.card {
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: 300px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    border-radius: 20px;
+    background: var(--bg-color);
+}
+
+.card__img {
+    height: 192px;
+    width: 100%;
+}
+
+.card__img svg {
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-top: -20px;
+}
+
+.card__avatar {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 57px);
+}
+
+.card__avatar svg {
+    width: 100px;
+    height: 100px;
+}
+
+.card__title {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.card__subtitle {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--submain-color);
+}
+
+.card__btn {
+    margin-top: 15px;
+    width: 76px;
+    height: 31px;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--main-color);
+    background: var(--bg-color);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.card__btn-solid {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.card__btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.card__btn-solid:hover {
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.imgme {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.imgme-text {
+    display: inline-block;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+}
+
+.cards .red {
+    background-color: #f43f5e;
+}
+
+.cards .blue {
+    background-color: #3b82f6;
+}
+
+.cards .green {
+    background-color: #22c55e;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards:hover>.card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
