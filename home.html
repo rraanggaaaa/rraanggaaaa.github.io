@@ -8,6 +8,7 @@
     <link href="/css/body.css" rel="stylesheet">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
+    <link href="/js/app.js">
 
 </head>
 
@@ -138,7 +139,7 @@
     <!-- MAIN -->
     <main>
         <section id="section1">
-            <div>
+            <div class="animated1">
                 <div class="bg"></div>
                 <div class="bg bg2"></div>
                 <div class="bg bg3"></div>
@@ -230,23 +231,31 @@
                                         </g>
                                     </pattern>
                                 </defs>
-                                <rect x="0" y="-100" fill="url(#a)" width="100%" height="100%"></rect>
+                                <rect x="0" y="-90" fill="url(#a)" width="100%" height="100%"></rect>
                                 <rect x="0" y="0" fill="url(#b)" width="100%" height="100%"></rect>
                             </svg></div>
                         <div class="card__avatar"><a class="imgme" href="https://ibb.co/cCjDmns"><img
-                                    src="https://i.ibb.co/cCjDmns/imgme.png" alt="imgme" height="100px"
-                                    width="100px"></a>
+                                    src="https://i.ibb.co/cCjDmns/imgme.png" alt="imgme" height="90px" width=90px"></a>
                         </div>
                         <div class="card__title">Dwi Rangga Okta Zuhdiyanto</div>
                         <div class="card__subtitle">Web Development</div>
                         <div class="card__wrapper">
-                            <button class="card__btn">Button</button>
-                            <button class="card__btn card__btn-solid">Button</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="cardContainerWeather">
+            <div class="cardWeather">
+                <h2 id="city"></h2>
+                <img id="weather-icon" src="" alt="Weather Icon" height="100px" width="100px">
+                <p id="temperature">32°</p>
+                <div class="minmaxContainer">
+                </div>
+                <h3 id="description"></h3>
+            </div>
+        </div>
 
         <section id="section2">
             <div class="container">
@@ -362,6 +371,10 @@
 
         animateText();
     </script>
+
+    <!-- SCRIPT WEATHER -->
+
+    <script src="/js/app.js"></script>
 
     <!-- SCRIPT BUTTON SUNMOON -->
     <script>

@@ -9,8 +9,7 @@
 
 /* Additional styles to position the <p> element */
 .footer p {
-    margin-top: 20px;
-    color: #000000; /* Add some spacing between the container and the <p> element */
+    margin-top: 20px; /* Add some spacing between the container and the <p> element */
 }
 
 /* Ganti warna tombol untuk setiap mode */
@@ -128,7 +127,8 @@ body.dark-mode #theme-toggle-button {
     margin-top: 20px;
     display: flex;
     position: relative;
-    background-color: #90f1f1;
+    background-color: #df8484;
+    background-image: linear-gradient(135deg, #df8484, #185ee0);
     box-shadow: 0 0 1px 0 rgba(118, 105, 105, 0.466), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
     padding: 0.75rem;
     border-radius: 10px;
@@ -136,6 +136,4 @@ body.dark-mode #theme-toggle-button {
 
 }
 .container {
-    font-style: Bold;
-    color: black;
 }

@@ -17,18 +17,36 @@ section {
     margin-bottom: 60px;
 }
 
+.animated1 {
+    background-color: #df8484;
+    background-image: linear-gradient(135deg, #df8484, #185ee0);
+    box-shadow: 0 0 1px 0 rgba(118, 105, 105, 0.466), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    padding: 0.75rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    height: 570px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    margin-top: -50px;
+    z-index: -2;
+    /* Set a lower z-index to place it behind other elements */
+}
+
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #000 50%, #df8484 50%);
     bottom: 0;
     left: -50%;
+    margin-top: 70px;
     opacity: .5;
     position: fixed;
     right: -50%;
     top: 0;
     position: absolute;
     z-index: -1;
-    width: 122%;
 }
 
 .bg2 {
@@ -45,13 +63,16 @@ section {
 .bg,
 .bg2,
 .bg3 {
-    height: 560px;
+    height: 500px;
+    width: 120%;
 }
+
 
 .container_card {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
     position: relative;
     /* Set the container_card position to relative */
     z-index: 1;
@@ -75,6 +96,7 @@ section {
 
 h1 {
     font-family: monospace;
+    margin-top: 100px;
 }
 
 @keyframes slide {
@@ -112,7 +134,7 @@ body.dark-mode {
 }
 
 .card__img {
-    height: 192px;
+    height: 230px;
     width: 100%;
 }
 
@@ -124,8 +146,8 @@ body.dark-mode {
 
 .card__avatar {
     position: absolute;
-    width: 114px;
-    height: 114px;
+    width: 110px;
+    height: 110px;
     background: var(--bg-color);
     border-radius: 100%;
     display: flex;
@@ -183,13 +205,71 @@ body.dark-mode {
 }
 
 .imgme {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    float: center;
+    margin-bottom: 18px;
 }
 
 .imgme-text {
     display: inline-block;
+}
+
+.cardContainerWeather {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardWeather {
+    position: relative;
+    width: 220px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(65, 65, 65, 0.308);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+}
+
+#temperature {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+#description {
+    font-size: 22px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.minmaxContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardContainerWeather::before {
+    width: 100px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    background-color: rgb(144, 161, 255);
+    z-index: -1;
+    border-radius: 50%;
+    left: 350px;
+    top: 50px;
+    transition: all 1s;
+}
+
+.cardContainerWeather:hover::before {
+    transform: translate(-50px, 50px);
 }
 
 .cards {
@@ -214,6 +294,7 @@ body.dark-mode {
 }
 
 .cards .card {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
