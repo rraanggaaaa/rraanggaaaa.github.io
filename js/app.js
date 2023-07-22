@@ -1,3 +1,4 @@
+// WEATHER API
 const apiKey = 'c5f35647833f2b888d9f288bad158bc7';
 const cityElement = document.getElementById('city');
 const temperatureElement = document.getElementById('temperature');
@@ -19,7 +20,6 @@ function fetchWeatherData(latitude, longitude) {
       temperatureElement.textContent = `${temperature}°C`;
       descriptionElement.textContent = `${description}`;
 
-      // Call function to set weather icon based on weather icon code
       setWeatherIcon(weatherIconCode);
     })
     .catch(error => console.log('Error fetching weather data:', error));
@@ -44,14 +44,16 @@ function getLocation() {
   }
 }
 
-// ...
-
 function setWeatherIcon(iconCode) {
     const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
     weatherIconElement.src = iconUrl;
   }
   
-
-// Call the function to get the user's last known location and fetch weather data
 getLocation();
 
+// LISTEN BUTTON
+const listenButton = document.getElementById('listenButton');
+
+listenButton.addEventListener('click', () => {
+  window.location.href = 'https://open.spotify.com/playlist/6jcGfqd0t2qxX5R9iDxruP?si=9c123c3b77ae4401';
+});

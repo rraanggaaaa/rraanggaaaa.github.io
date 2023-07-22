@@ -3,15 +3,21 @@
 .footer {
     /* Your existing styles */
     display: flex;
+    position: relative;
+    background-color: #df8484;
+    background-image: linear-gradient(135deg, #df8484, #185ee0);
+    box-shadow: 0 0 1px 0 rgba(118, 105, 105, 0.466), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    padding: 0.75rem;
+    border-radius: 10px;
+    justify-content: center;
     flex-direction: column; /* Set the flex direction to column */
     align-items: center; /* Align the elements horizontally at the center */
 }
 
-/* Additional styles to position the <p> element */
-.footer p {
-    margin-top: 20px; /* Add some spacing between the container and the <p> element */
+#findme {
+    margin-top: 10px;
+    font-family: monospace;
 }
-
 /* Ganti warna tombol untuk setiap mode */
 #theme-toggle-button {
     fill: #000000; /* Warna tombol untuk mode terang */
@@ -20,6 +26,7 @@
 body.dark-mode #theme-toggle-button {
     fill: #ffffff; /* Warna tombol untuk mode gelap */
 }
+
 .btn-cssbuttons {
     --btn-color: #000000;
     position: relative;
@@ -122,18 +129,4 @@ body.dark-mode #theme-toggle-button {
 .btn-cssbuttons:hover ul li:nth-child(3) a {
     transition-delay: 0.25s;
    }
-   
-.footer {
-    margin-top: 20px;
-    display: flex;
-    position: relative;
-    background-color: #df8484;
-    background-image: linear-gradient(135deg, #df8484, #185ee0);
-    box-shadow: 0 0 1px 0 rgba(118, 105, 105, 0.466), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
-    padding: 0.75rem;
-    border-radius: 10px;
-    justify-content: center;
 
-}
-.container {
-}
