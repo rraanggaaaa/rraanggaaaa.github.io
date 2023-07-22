@@ -244,6 +244,8 @@ h1 {
     width: 100px;
     height: 100px;
     content: "";
+    margin-top: -130px;
+    margin-left: 100px;
     position: absolute;
     background-color: rgb(144, 161, 255);
     z-index: -1;
