@@ -134,6 +134,7 @@ body.dark-mode {
 }
 
 .card__img {
+    margin-top: -20px;
     height: 230px;
     width: 100%;
 }
