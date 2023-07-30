@@ -1,6 +1,6 @@
 /*CAROUSEL*/
 #section3 {
-    height: 840px;
+    height: 420px;
 }
 
 .slider {
@@ -29,8 +29,8 @@
     box-sizing: border-box;
     background-image: linear-gradient(135deg, #df8484, #185ee0);
     padding: 20px;
-    width: 450px;
-    height: 800px;
+    width: 225px;
+    height: 400px;
     text-align: center;
     transition: transform 0.4s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -41,7 +41,7 @@
 .testimonials .item img {
     border-radius: 20px;
     width: 90%;
-    height: 500px;
+    height: 250px;
 }
 
 .testimonials .item p {
