@@ -61,28 +61,28 @@ function isLocalStorageSupported() {
   }
 }
 
-// Function to get the current visitor count from local storage
-function getVisitorCount() {
-  if (isLocalStorageSupported()) {
-    const count = localStorage.getItem("visitorCount");
-    return count ? parseInt(count) : 0;
-  } else {
-    return 0;
-  }
-}
+// // Function to get the current visitor count from local storage
+// function getVisitorCount() {
+//   if (isLocalStorageSupported()) {
+//     const count = localStorage.getItem("visitorCount");
+//     return count ? parseInt(count) : 0;
+//   } else {
+//     return 0;
+//   }
+// }
 
-// Function to update and display the visitor count
-function updateVisitorCount() {
-  const count = getVisitorCount() + 1;
-  if (isLocalStorageSupported()) {
-    localStorage.setItem("visitorCount", count);
-  }
-  const visitorCountElement = document.getElementById("visitorCount");
-  visitorCountElement.textContent = count;
-}
+// // Function to update and display the visitor count
+// function updateVisitorCount() {
+//   const count = getVisitorCount() + 1;
+//   if (isLocalStorageSupported()) {
+//     localStorage.setItem("visitorCount", count);
+//   }
+//   const visitorCountElement = document.getElementById("visitorCount");
+//   visitorCountElement.textContent = count;
+// }
 
-// Call the function to update and display the visitor count
-updateVisitorCount();
+// // Call the function to update and display the visitor count
+// updateVisitorCount();
 
 // LISTEN BUTTON
 const listenButton = document.getElementById("listenButton");
