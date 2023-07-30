@@ -93,26 +93,3 @@ listenButton.addEventListener("click", () => {
 });
 
 // CARD PHOTO
-const cardContainer = document.querySelector(".card-container");
-const prevButton = document.getElementById("prevButton");
-const nextButton = document.getElementById("nextButton");
-
-let currentIndex = 0;
-
-function showSlide(index) {
-  const translateXValue = `translateX(-${index * 350}px)`; // 350px is the width of each card
-  cardContainer.style.transform = translateXValue;
-  currentIndex = index;
-}
-
-prevButton.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    showSlide(currentIndex - 1);
-  }
-});
-
-nextButton.addEventListener("click", () => {
-  if (currentIndex < cardContainer.childElementCount - 1) {
-    showSlide(currentIndex + 1);
-  }
-});

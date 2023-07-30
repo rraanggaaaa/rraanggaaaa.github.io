@@ -208,6 +208,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -20px;
 }
 
 .cardContainerWeather {
@@ -276,7 +277,6 @@ h1 {
 .cardContainerWeather:hover::before {
     transform: translate(-50px, 50px);
 }
-
 
 /* TOMBOL BEAUTY */
 #sportify {
@@ -370,34 +370,6 @@ h1 {
     100% {
         fill: white;
     }
-}
-
-/* PHOTO DESCRIPTION */
-.card-container {
-    display: flex;
-    overflow-x: hidden; /* Hide overflow to prevent cards from overflowing the container */
-    padding: 20px;
-    justify-content: flex-end; /* Align cards to the right */
-    width: 100%; /* Set a fixed width to prevent shrinking */
-}
-.card-container::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* section4 CSS */
-#section4 {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 20px;
-    justify-content: flex-end; /* Align artikel di kanan */
-  }
-
-button {
-    margin-top: 20px;
 }
 
 /* RED GREEN BLUE */
