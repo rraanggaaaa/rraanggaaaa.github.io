@@ -110,4 +110,40 @@ scrollToTopBtn.addEventListener("click", () => {
     });
 });
 
+// CONTACT
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form");
+  form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const response = await fetch(form.action, {
+          method: "POST",
+          headers: {
+              "Accept": "application/json"
+          },
+          body: new URLSearchParams({
+              name,
+              email,
+              message
+          })
+      });
+
+      const result = await response.json();
+      console.log(result); // hasil respons dari Formspree
+
+      // Handle respons atau tindakan lain yang diperlukan
+
+      // Jika berhasil, arahkan kembali ke halaman contact.html
+      if (response.ok) {
+          window.location.href = "contact.html";
+      }
+  });
+});
+
+
+
 

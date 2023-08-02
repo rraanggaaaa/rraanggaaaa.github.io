@@ -9,7 +9,7 @@
     <link href="/css/contact.css" rel="stylesheet">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
-    <link href="/js/form.js">
+    <link href="/js/app.js">
 
 </head>
 
@@ -140,17 +140,17 @@
     <!-- MAIN -->
     <main>
         <div class="tabscontact">
-        <div id="contact-form" class="contact-form">
-            <span class="heading">Contact Us</span>
-            <form id="form" action="/submit" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required="">
-                <label for="email">Email:</label>
-                <input type="email" name="email" required="">
-                <label for="message">Message:</label>
-                <textarea name="text" required=""></textarea>
-                <button type="submit">Submit</button>
-              </form>
+            <div id="contact-form" class="contact-form">
+                <span class="heading">Contact Us</span>
+                <form id="form" action="https://formspree.io/f/xjvqgazr" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="text">Message:</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
           </div>
         </div>
           
