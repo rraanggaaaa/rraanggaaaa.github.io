@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link href="/css/body.css" rel="stylesheet">
+    <link href="/css/contact.css" rel="stylesheet">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
-    <link href="/js/app.js">
+    <link href="/js/form.js">
 
 </head>
 
@@ -138,6 +139,21 @@
     </header>
     <!-- MAIN -->
     <main>
+        <div class="tabscontact">
+        <div id="contact-form" class="contact-form">
+            <span class="heading">Contact Us</span>
+            <form id="form" action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required="">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required="">
+                <label for="message">Message:</label>
+                <textarea name="text" required=""></textarea>
+                <button type="submit">Submit</button>
+              </form>
+          </div>
+        </div>
+          
     </main>
 
     <!-- FOOTER -->
