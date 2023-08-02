@@ -291,20 +291,20 @@ h1 {
 #section4 {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-bottom: 60px;
 }
 
 .card-cat {
     margin: 10px;
     padding: 20px;
-    width: 330px;
+    width: 90%; /* Menggunakan persen (%) untuk lebar */
+    max-width: 330px; /* Maksimum lebar, jika perangkat lebih besar */
     min-height: 370px;
     border-radius: 20px;
     background-image: linear-gradient(135deg, #df8484, #185ee0);
-    box-shadow: 5px 5px 8px #938f8f,
-        -5px -5px 8px #938f8f;
+    box-shadow: 5px 5px 8px #938f8f, -5px -5px 8px #938f8f;
     transition: 0.4s;
 }
 
