@@ -10,21 +10,26 @@
     padding: 0.75rem;
     border-radius: 10px;
     justify-content: center;
-    flex-direction: column; /* Set the flex direction to column */
-    align-items: center; /* Align the elements horizontally at the center */
+    flex-direction: column;
+    /* Set the flex direction to column */
+    align-items: center;
+    /* Align the elements horizontally at the center */
 }
 
 #findme {
     margin-top: 10px;
     font-family: monospace;
 }
+
 /* Ganti warna tombol untuk setiap mode */
 #theme-toggle-button {
-    fill: #000000; /* Warna tombol untuk mode terang */
+    fill: #000000;
+    /* Warna tombol untuk mode terang */
 }
 
 body.dark-mode #theme-toggle-button {
-    fill: #ffffff; /* Warna tombol untuk mode gelap */
+    fill: #ffffff;
+    /* Warna tombol untuk mode gelap */
 }
 
 .btn-cssbuttons {
@@ -43,8 +48,8 @@ body.dark-mode #theme-toggle-button {
     cursor: pointer;
     filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-   }
-   
+}
+
 .btn-cssbuttons::before {
     position: absolute;
     content: "";
@@ -56,28 +61,28 @@ body.dark-mode #theme-toggle-button {
     background: var(--btn-color);
     border-radius: 24px;
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-   }
-   
+}
+
 .btn-cssbuttons span,
 .btn-cssbuttons span span {
     display: inline-flex;
     vertical-align: middle;
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-   }
-   
+}
+
 .btn-cssbuttons span {
     transition-delay: 0.05s;
-   }
-   
+}
+
 .btn-cssbuttons span:first-child {
     padding-right: 7px;
-   }
-   
+}
+
 .btn-cssbuttons span span {
     margin-left: 8px;
     transition-delay: 0.1s;
-   }
-   
+}
+
 .btn-cssbuttons ul {
     position: absolute;
     top: 50%;
@@ -88,45 +93,81 @@ body.dark-mode #theme-toggle-button {
     padding: 0;
     list-style-type: none;
     transform: translateY(-50%);
-   }
-   
+}
+
 .btn-cssbuttons ul li {
     flex: 1;
-   }
-   
+}
+
 .btn-cssbuttons ul li a {
     display: inline-flex;
     vertical-align: middle;
     transform: translateY(55px);
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-   }
-   
+}
+
 .btn-cssbuttons ul li a:hover {
     opacity: 0.5;
-   }
-   
+}
+
 .btn-cssbuttons:hover::before {
     transform: scale(1.2);
-   }
-   
+}
+
 .btn-cssbuttons:hover span,
 .btn-cssbuttons:hover span span {
     transform: translateY(-55px);
-   }
-   
+}
+
 .btn-cssbuttons:hover ul li a {
     transform: translateY(0);
-   }
-   
+}
+
 .btn-cssbuttons:hover ul li:nth-child(1) a {
     transition-delay: 0.15s;
-   }
-   
+}
+
 .btn-cssbuttons:hover ul li:nth-child(2) a {
     transition-delay: 0.2s;
-   }
-   
+}
+
 .btn-cssbuttons:hover ul li:nth-child(3) a {
     transition-delay: 0.25s;
-   }
+}
 
+.buttonup {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    background-image: linear-gradient(135deg, #df8484, #185ee0);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    border: #004dff;
+    transition: 0.5s;
+}
+
+.buttonup:hover {
+    transform: scale(1.1);
+}
+
+.buttonup:active {
+    background-image: linear-gradient(135deg, #df8484, #185ee0);
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    margin-bottom: 60%;
+    border-bottom: 15px solid white;
+}
