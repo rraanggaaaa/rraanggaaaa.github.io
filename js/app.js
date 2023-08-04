@@ -133,11 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       const result = await response.json();
-      console.log(result); // hasil respons dari Formspree
-
-      // Handle respons atau tindakan lain yang diperlukan
-
-      // Jika berhasil, arahkan kembali ke halaman contact.html
+      console.log(result); 
       if (response.ok) {
           window.location.href = "contact.html";
       }

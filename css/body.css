@@ -39,7 +39,6 @@ section {
     position: relative;
     margin-top: -50px;
     z-index: -2;
-    /* Set a lower z-index to place it behind other elements */
 }
 
 .bg {
@@ -81,12 +80,8 @@ section {
     align-items: center;
     margin-top: 10px;
     position: relative;
-    /* Set the container_card position to relative */
     z-index: 1;
-    /* Bring the container_card above the background elements */
 }
-
-/* Rest of the CSS remains the same */
 
 .content {
     background-color: rgba(255, 255, 255, .8);
@@ -283,13 +278,15 @@ h1 {
 .tabs3 {
     display: flex;
     position: relative;
-    width: 85%;
+    width: 400px;
     background-color: #df8484;
-    background-image: linear-gradient(135deg, #53b3eb, #5f5f5f);
+    background-image: linear-gradient(135deg, #000000, #ffffff);
     box-shadow: 0 0 1px 0 rgba(118, 105, 105, 0.466), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
     padding: 0.75rem;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     flex-grow: 1;
     justify-content: center;
     margin-top: -20px;
@@ -299,30 +296,18 @@ h1 {
  
 .tabs4 {
     display: flex;
-    width: 85%;
+    width: 350px;
     position: relative;
     background-color: #df8484;
     background-image: linear-gradient(-135deg, #5f5f5f , #53b3eb);
     box-shadow: 0 0 1px 0 rgba(118, 105, 105, 0.466), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
     padding: 0.75rem;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     flex-grow: 1;
     justify-content: center;
     margin-top: -20px;
     margin-bottom: 20px;
     margin: 0 auto;
   }
-  
-.cat {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -5px;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-}
 
 #section4 {
     font-family: 'Poppins', sans-serif;
@@ -334,8 +319,8 @@ h1 {
     margin-bottom: 40px;
     margin: 10px;
     padding: 20px;
-    width: 330px;
-    min-height: 370px;
+    width: 130px;
+    min-height: 10px;
     border-radius: 40px;
     background-image: linear-gradient(135deg, #dd6767, #185ee0);
     box-shadow: 5px 5px 8px #938f8f,
@@ -349,14 +334,14 @@ h1 {
 }
 
 .card-title-cat {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     color: #b2eccf;
     margin: 15px 0 0 10px;
 }
 
 .card-image-cat {
-    min-height: 170px;
+    min-height: 75px;
     background-color: #313131;
     border-radius: 15px;
     background: #313131;
@@ -366,25 +351,25 @@ h1 {
 
 .imgcat {
     border-radius: 20px;
-    height: 200px;
-    width: 330px;
+    height: 75px;
+    width: 130px;
 }
 
 .card-body-cat {
     margin: 13px 0 0 10px;
     color: rgb(184, 184, 184);
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .footer-cat {
     float: right;
     margin: 28px 0 0 18px;
-    font-size: 13px;
+    font-size: 10px;
     color: #b3b3b3;
 }
 
 .by-name-cat {
-    font-weight: 700;
+    font-weight: 200;
 }
 
 /* TOMBOL BEAUTY */
@@ -484,66 +469,83 @@ h1 {
 /* RED GREEN BLUE */
 #section6 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    /* Center items vertically */
     align-items: center;
 }
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    /* Center items vertically */
-    align-items: center;
-}
-
-.cards .red {
-    background-color: #f43f5e;
-}
-
-.cards .blue {
-    background-color: #3b82f6;
-}
-
-.cards .green {
-    background-color: #22c55e;
-}
-
-.cards .card {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.flip-card {
+    background-color: transparent;
+    width: 140px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin: 10px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
     text-align: center;
-    height: 100px;
-    width: 250px;
-    border-radius: 10px;
+    margin: 0;
+  }
+  
+  .titleedu {
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .titleexp {
+    font-size: 0.8em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  .statusflip{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-top: -0.5px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+       bisque 40%, rgb(255, 185, 160) 78%);
     color: white;
-    cursor: pointer;
-    transition: 400ms;
-}
-
-.cards .card p.tip {
-    font-size: 1em;
-    font-weight: 700;
-}
-
-.cards .card p.second-text {
-    font-size: .7em;
-}
-
-.cards .card:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.cards:hover>.card:not(:hover) {
-    filter: blur(10px);
-    transform: scale(0.9, 0.9);
-}
-
+    transform: rotateY(180deg);
+  }
 a {
     color: #000000;
     text-decoration: none;

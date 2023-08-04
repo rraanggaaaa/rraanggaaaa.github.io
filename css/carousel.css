@@ -1,12 +1,5 @@
 /*CAROUSEL*/
-.organization{
-    margin-top: -20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-}
+
 #section3 {
     height: 440px;
 }
@@ -35,7 +28,7 @@
     top: 0;
     position: absolute;
     box-sizing: border-box;
-    background-image: linear-gradient(135deg, #185ee0, #53b3eb);
+    background-image: linear-gradient(135deg, #ffffff, #000000);
     padding: 20px;
     width: 300px;;
     height: 400px;
