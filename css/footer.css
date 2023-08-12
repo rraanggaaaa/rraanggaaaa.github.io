@@ -16,6 +16,9 @@
     /* Align the elements horizontally at the center */
 }
 
+.plt {
+    color: white;
+}
 #findme {
     margin-top: 10px;
     font-family: monospace;
